@@ -3,7 +3,5 @@
   [class.selected]="currentTask === selectedTask"
   [task]="currentTask">
 </task-display>
-
-<div class="selected">
-
-</div>
+<edit-task-details *ngIf="selectedTask" [task]="selectedTask">
+</edit-task-details>
